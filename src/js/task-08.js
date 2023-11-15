@@ -1,23 +1,23 @@
 
-            const loginForm = document.querySelector('.login-form');
+const loginForm = document.querySelector('.login-form');
 
-            loginForm.addEventListener('submit', function(event) {
-                event.preventDefault(); 
+loginForm.addEventListener('submit', function(event) {
+    event.preventDefault(); 
 
-                const emailValue = loginForm.elements.email.value;
-                const passwordValue = loginForm.elements.password.value;
+    const emailValue = loginForm.elements.email.value;
+    const passwordValue = loginForm.elements.password.value;
 
-                if (!emailValue || !passwordValue) {
-                    alert('Всі поля форми, мають бути заповенені.');
-                    return;
-                }
+    if (!emailValue || !passwordValue) {
+        alert('Всі поля форми, мають бути заповенені.');
+        return;
+    }
 
-                const formData = {
-                    email: emailValue,
-                    password: passwordValue
-                };
+    const formData = {
+        email: emailValue,
+        password: passwordValue
+    };
 
-                console.log(formData);
+    console.log(formData);
 
-                loginForm.reset();
-            });
+    loginForm.reset();
+});
