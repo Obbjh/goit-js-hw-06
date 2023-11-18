@@ -18,8 +18,8 @@ const images = [
  
   const galleryCurrent = images.map(image => `
     <li class="gallery-item">
-      <img src="${image.url}" alt="${image.alt}" class="gallery-img">
+      <img src="${image.url}" alt="${image.alt}" class="gallery">
     </li>
   `).join('');
 
-  galleryList.insertAdjacentHTML('beforeend', galleryCurrent);
+  galleryList.insertAdjacentHTML('afterbegin', galleryCurrent);
